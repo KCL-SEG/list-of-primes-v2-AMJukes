@@ -19,8 +19,7 @@ def checkIfNotPrime(primes, val):
     for prime in primes:
         #Once we reach the point that the primes we're testing with are greater than half the value, we can stop.
         #This strategy can be developed further, but is a little complicated. This serves more as a proof of concept (though it will improve efficiency with high numbers)
-        if val / prime < 2:
-            break
+        
         if val % prime == 0:
             return True
     return False
