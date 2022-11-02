@@ -34,4 +34,4 @@ def primes(number_of_primes):
             calcNextPrime(list)
         return list
     else:
-        raise Exception ValueError
+        raise ValueError
