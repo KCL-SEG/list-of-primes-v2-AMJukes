@@ -21,8 +21,10 @@ def checkIfNotPrime(primes, val):
         #This strategy can be developed further, but is a little complicated. This serves more as a proof of concept (though it will improve efficiency with high numbers)
         if val / prime < 2:
             break
+        #checks if the value is divisible by the current prime
         if val % prime == 0:
             return True
+    #since the value wasn't divisible by any of the primes we've already calulated, it must be prime
     return False
 
 def primes(number_of_primes):
